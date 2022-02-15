@@ -814,8 +814,105 @@ footer a {
     width: 100%;
     height: 926px;
     margin: auto;
-    background: url(../img/stars.png) center no-repeat;
+    background: url(../img/stars1.png) center no-repeat;
     background-size: 1590px;
+}
+
+.star {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.star1 {
+    top: 78px;
+    left: -1558px;
+    width: 27px;
+    height: 27px;
+    background: url(../img/star1.png) center no-repeat;
+    background-size: contain;
+    animation: 4s star infinite linear;
+}
+
+.star2 {
+    top: 367px;
+    left: -1368px;
+    width: 27px;
+    height: 27px;
+    background: url(../img/star1.png) center no-repeat;
+    background-size: contain;
+    animation: 5s star infinite linear;
+}
+
+.star3 {
+    top: 563px;
+    left: -1240px;
+    width: 21px;
+    height: 21px;
+    background: url(../img/star3.png) center no-repeat;
+    background-size: contain;
+    animation: 3s star infinite linear;
+}
+
+.star4 {
+    top: 515px;
+    left: -1014px;
+    width: 17px;
+    height: 17px;
+    background: url(../img/star4.png) center no-repeat;
+    background-size: contain;
+    animation: 5s star infinite linear;
+}
+
+.star5 {
+    top: 84px;
+    left: -780px;
+    width: 14px;
+    height: 14px;
+    background: url(../img/star5.png) center no-repeat;
+    background-size: contain;
+    animation: 4s star infinite linear;
+}
+
+.star6 {
+    top: 425px;
+    right: -696px;
+    width: 27px;
+    height: 27px;
+    background: url(../img/star1.png) center no-repeat;
+    background-size: contain;
+    animation: 7s star infinite linear;
+}
+
+.star7 {
+    top: 566px;
+    right: -756px;
+    width: 24px;
+    height: 24px;
+    background: url(../img/star2.png) center no-repeat;
+    background-size: contain;
+    animation: 5s star infinite linear;
+}
+
+.star8 {
+    top: 381px;
+    right: -1282px;
+    width: 27px;
+    height: 27px;
+    background: url(../img/star1.png) center no-repeat;
+    background-size: contain;
+    animation: 6s star infinite linear;
+}
+
+@keyframes star {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.3);
+    }
 }
 
 .comet-radius-left {
@@ -826,12 +923,13 @@ footer a {
     margin: auto;
     width: 760px;
     height: 760px;
+    animation: 35s wheel infinite linear;
 }
 
 .comet-left {
     position: absolute;
     top: 0;
-    left: -100px;
+    left: -170px;
     right: 0;
     margin: auto;
     width: 216px;
@@ -848,18 +946,30 @@ footer a {
     margin: auto;
     width: 760px;
     height: 760px;
+    animation: 30s wheel infinite linear;
+    animation-direction: reverse;
 }
 
 .comet-right {
     position: absolute;
     top: 0;
     left: 0;
-    right: -200px;
+    right: -170px;
     margin: auto;
     width: 216px;
     height: 139px;
     background: url(../img/comet-right.png) center no-repeat;
     background-size: contain;
+}
+
+@keyframes wheel {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .cloud {
@@ -872,7 +982,8 @@ footer a {
 .cloud1 {
     top: 741px;
     left: -1600px;
-    /*animation: cloud1 8s ease;*/
+    animation: cloud1 10s ease;
+    animation-fill-mode: both;
 }
 
 @keyframes cloud1 {
@@ -888,50 +999,160 @@ footer a {
 .cloud2 {
     top: 717px;
     left: -1000px;
+    animation: cloud2 9s ease;
+    animation-fill-mode: both;
+}
+
+@keyframes cloud2 {
+    from {
+        left: -2500px;
+    }
+
+    to {
+        left: -1000px;
+    }
 }
 
 .cloud3 {
     top: 913px;
-    left: -1100px;
+    left: -2500px;
+    animation: cloud3 9s ease;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes cloud3 {
+    from {
+        left: -2500px;
+    }
+
+    to {
+        left: -1100px;
+    }
 }
 
 .cloud4 {
     top: 871px;
     left: -350px;
+    animation: cloud4 8s ease;
+    animation-fill-mode: both;
+}
+
+@keyframes cloud4 {
+    from {
+        left: -2500px;
+    }
+
+    to {
+        left: -350px;
+    }
 }
 
 .cloud5 {
     top: 1032px;
     left: -300px;
+    animation: cloud5 11s ease;
+    animation-fill-mode: both;
+}
+
+@keyframes cloud5 {
+    from {
+        left: -2500px;
+    }
+
+    to {
+        left: -300px;
+    }
 }
 
 .cloud6 {
     top: 778px;
     right: -1000px;
     z-index: 2;
+    animation: cloud6 8s ease;
+    animation-fill-mode: both;
+}
+
+@keyframes cloud6 {
+    from {
+        right: -2500px;
+    }
+
+    to {
+        right: -1000px;
+    }
 }
 
 .cloud7 {
     top: 954px;
     right: -1200px;
+    animation: cloud7 5s ease;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes cloud7 {
+    from {
+        right: -2500px;
+    }
+
+    to {
+        right: -1200px;
+    }
 }
 
 .cloud8 {
     top: 820px;
     right: -1200px;
+    animation: cloud8 14s ease;
+    animation-fill-mode: both;
+}
+
+@keyframes cloud8 {
+    from {
+        right: -3000px;
+    }
+
+    to {
+        right: -1200px;
+    }
 }
 
 .cloud9 {
     top: 666px;
     right: -1600px;
+    animation: cloud9 10s ease;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes cloud9 {
+    from {
+        right: -2500px;
+    }
+
+    to {
+        right: -1600px;
+    }
 }
 
 .cloud10 {
     top: 1193px;
     left: -1300px;
     z-index: 1;
+    animation: cloud10 10s ease;
+    animation-fill-mode: both;
 }
 
+@keyframes cloud10 {
+    from {
+        left: -2500px;
+    }
+
+    to {
+        left: -1300px;
+    }
+}
 
 .popup {
     position: fixed;
@@ -1035,6 +1256,14 @@ footer a {
 	margin-bottom: 30px;
 }
 
+.animateMe {
+    opacity: 0;
+}
+
+.animateMe .animated {
+    opacity: 1;
+}
+
 @media (max-width: 1366px) {
     .planets {
         right: 0;
@@ -1084,10 +1313,11 @@ footer a {
         left: -150px;
         width: 300px;
         height: 300px;
+        animation: 30s wheel infinite linear;
     }
 
     .comet-left {
-        left: 0;
+        left: -120px;
         width: 157px;
         height: 90px;
         background: url(../img/comet-mob.png) center no-repeat;
@@ -1118,11 +1348,14 @@ footer a {
         right: -50px;
         width: 306px;
         z-index: 1;
+        animation: cloud1 10s ease;
+        animation-delay: 1s;
+        animation-fill-mode: both;
     }
 
     @keyframes cloud1 {
         from {
-            right: -500px;
+            right: -1000px;
         }
 
         to {
@@ -1134,12 +1367,37 @@ footer a {
         top: 1033px;
         left: -300px;
         width: 186px;
+        animation: cloud2 8s ease;
+        animation-fill-mode: both;
+    }
+
+    @keyframes cloud2 {
+        from {
+            left: -1000px;
+        }
+
+        to {
+            left: -300px;
+        }
     }
 
     .cloud10 {
         top: 1488px;
         left: -280px;
         width: 189px;
+        animation: cloud10 9s ease;
+        animation-delay: 1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes cloud10 {
+        from {
+            left: -1000px;
+        }
+
+        to {
+            left: -280px;
+        }
     }
 
     .container {
