@@ -253,7 +253,7 @@ body {
 body {
     margin: 0;
     color: #fff;
-    font: normal 16px/19px 'RotondaC', sans-serif;
+    font: 500 16px/19px 'Iskra CYR Md', sans-serif;
 }
 
 .wrapper {
@@ -363,7 +363,7 @@ body {
 }
 
 .page-title2 {
-    font-family: MDLZ BITE TYPE;
+    font-family: 'Odds', sans-serif;
     font-size: 40px;
     line-height: 48px;
     text-align: center;
@@ -776,7 +776,7 @@ footer a {
 .copyright {
 	max-width: 500px;
 	width: 100%;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 13px;
     margin: auto;
 }
@@ -1661,7 +1661,7 @@ footer a {
     }
 
     .popup {
-        padding-top: 20%
+        padding-top: 100px
     }
 
     .popup__wrap,

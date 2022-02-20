@@ -27,3 +27,25 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Odds';
+    src: url('Odds-Regular.eot');
+    src: url('Odds-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Odds-Regular.woff2') format('woff2'),
+        url('Odds-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Iskra CYR Md';
+    src: url('IskraCYRMd.eot');
+    src: url('IskraCYRMd.eot?#iefix') format('embedded-opentype'),
+        url('IskraCYRMd.woff2') format('woff2'),
+        url('IskraCYRMd.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
